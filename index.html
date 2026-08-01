@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abeka SDA Church — Welcome Home</title>
+<meta name="description" content="Abeka SDA Church is a welcoming Seventh-day Adventist family in Abeka-Lapaz, Accra. Join us for worship, prayer, and community every Saturday.">
+<meta property="og:title" content="Abeka SDA Church — Welcome Home">
+<meta property="og:description" content="Abeka SDA Church is a welcoming Seventh-day Adventist family in Abeka-Lapaz, Accra. Join us for worship, prayer, and community every Saturday.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/abeka.jpg">
+<link rel="icon" type="image/jpeg" href="assets/img/abeka.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="announce-bar" role="note" aria-label="Announcements">
+  <div class="marquee-track">
+    <span><i class="fas fa-church"></i> Sabbath Service every Saturday at 9:30 AM</span>
+    <span><i class="fas fa-hands-praying"></i> Prayer Meeting every Wednesday at 6:00 PM</span>
+    <span><i class="fas fa-campground"></i> Annual Camp Meeting coming soon</span>
+    <span><i class="fas fa-church"></i> Sabbath Service every Saturday at 9:30 AM</span>
+    <span><i class="fas fa-hands-praying"></i> Prayer Meeting every Wednesday at 6:00 PM</span>
+    <span><i class="fas fa-campground"></i> Annual Camp Meeting coming soon</span>
+  </div>
+</div>
+<header class="site-header">
+  <nav class="navbar" aria-label="Primary">
+    <a href="index.html" class="brand">
+      <img src="assets/img/abeka.jpg" alt="Abeka SDA Church logo">
+      <span class="brand-text"><strong>Abeka SDA Church</strong><span>Seventh-day Adventist</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">
+    <i class="fas fa-home"></i><span class="nav-text">Home</span>
+  </a></li>
+<li><a href="bible.html" class="">
+    <i class="fas fa-bible"></i><span class="nav-text">Bible</span>
+  </a></li>
+<li class="dropdown">
+  <a href="ay.html" class="" aria-haspopup="true">
+    <i class="fas fa-users"></i><span class="nav-text">Youth Ministry</span>
+    <i class="fas fa-chevron-down" style="font-size:.65rem;opacity:.6"></i>
+  </a>
+  <div class="dropdown-content">
+    <a href="ay.html">Youth Ministry Overview</a>
+<a href="adventurers.html">Adventurers (4-9)</a>
+<a href="pathfinders.html">Pathfinders (10-15)</a>
+<a href="senior.html">Senior Youth (16+)</a>
+  </div>
+</li>
+<li><a href="event.html" class="">
+    <i class="fas fa-microphone-alt"></i><span class="nav-text">Sermons</span>
+  </a></li>
+<li><a href="gallery.html" class="">
+    <i class="fas fa-images"></i><span class="nav-text">Gallery</span>
+  </a></li>
+<li><a href="about.html" class="">
+    <i class="fas fa-info-circle"></i><span class="nav-text">About</span>
+  </a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="btn btn-ghost btn-sm" data-open-modal="prayerModal"><i class="fas fa-praying-hands"></i> Prayer</button>
+      <button class="btn btn-dark btn-sm" data-open-modal="donationModal"><i class="fas fa-hand-holding-heart"></i> Give</button>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="hero-photo" style="background-image:url('assets/img/church.jpg');"></div>
+  <div class="hero-rays"></div>
+  <div class="hero-content">
+    <span class="eyebrow">Abeka-Lapaz, Accra &middot; Est. 1982</span>
+    <h1>Where Faith, Hope &amp; Love Come Together</h1>
+    <p class="lede">Abeka SDA Church is a warm, worshipping family walking with Jesus &mdash; and we'd love for you to walk with us.</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" data-open-modal="donationModal"><i class="fas fa-hand-holding-heart"></i> Give Online</button>
+      <a href="event.html" class="btn btn-outline"><i class="fas fa-play"></i> Watch a Sermon</a>
+    </div>
+  </div>
+</section>
+
+<div class="countdown-card" id="countdown-timer">
+  <div class="cd-label"><i class="fas fa-church"></i> Next Service In</div>
+  <div class="countdown-units">
+    <div class="unit"><strong id="cd-days">00</strong><small>Days</small></div>
+    <div class="unit"><strong id="cd-hours">00</strong><small>Hours</small></div>
+    <div class="unit"><strong id="cd-minutes">00</strong><small>Min</small></div>
+    <div class="unit"><strong id="cd-seconds">00</strong><small>Sec</small></div>
+  </div>
+  <div class="cd-service">Next: <strong>Divine Service</strong> &middot; Saturday, 9:30 AM</div>
+</div>
+<div class="countdown-card" id="cd-message" style="display:none;">
+  <div class="cd-label"><i class="fas fa-church"></i> Welcome to Sabbath Service!</div>
+  <div class="cd-service">Service is underway &mdash; join us now, we're glad you're here today.</div>
+</div>
+
+<section class="section">
+  <div class="container feature-grid reveal">
+    <div class="verse-card">
+      <h3><i class="fas fa-bible"></i> Daily Verse</h3>
+      <p id="verse-text">Loading today's verse&hellip;</p>
+      <p id="verse-reference"></p>
+      <div class="verse-actions">
+        <button id="share-verse"><i class="fas fa-share"></i> Share</button>
+        <button id="save-verse"><i class="far fa-bookmark"></i> Save</button>
+      </div>
+    </div>
+
+    <div class="card this-week">
+      <div class="card-body">
+        <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+        <h3>This Week</h3>
+        <ul>
+          <li><i class="fas fa-book"></i> <strong>Sunday</strong>&nbsp;&mdash; Bible Study, 6:30 PM</li>
+          <li><i class="fas fa-music"></i> <strong>Monday</strong>&nbsp;&mdash; Choir &amp; Singing Band, 7:00 PM</li>
+          <li><i class="fas fa-pray"></i> <strong>Wednesday</strong>&nbsp;&mdash; Prayer Meeting, 7:00 PM</li>
+          <li><i class="fas fa-music"></i> <strong>Thursday</strong>&nbsp;&mdash; Choir &amp; Singing Band, 7:00 PM</li>
+          <li><i class="fas fa-users"></i> <strong>Friday</strong>&nbsp;&mdash; Youth Meeting, 7:00 PM</li>
+          <li><i class="fas fa-church"></i> <strong>Saturday</strong>&nbsp;&mdash; Sabbath Service, 9:30 AM</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="card-icon"><i class="fas fa-pray"></i></div>
+        <h3>Prayer Request</h3>
+        <p style="color:var(--muted);">Share your prayer needs with us. We'll pray for you and keep your request confidential.</p>
+        <button class="btn btn-dark btn-block" data-open-modal="prayerModal">Submit a Prayer Request</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="section-head reveal">
+    <span class="eyebrow" style="justify-content:center;">Join Us</span>
+    <h2>Upcoming Services &amp; Gatherings</h2>
+    <p>A rhythm of worship, prayer, and fellowship every week.</p>
+  </div>
+  <div class="container grid grid-3 reveal">
+    <article class="card event-card">
+      <img src="assets/img/worship.jpg" alt="Congregation worshipping during Divine Service" loading="lazy">
+      <div class="card-body">
+        <span class="event-tag"><i class="far fa-calendar-alt"></i> Every Saturday</span>
+        <h3>Divine Service</h3>
+        <p>Join us for our weekly worship service. Come as you are and find a place to belong &mdash; we can't wait to worship with you this Saturday.</p>
+        <div class="event-meta-row">
+          <span><i class="fas fa-map-marker-alt"></i> Main Sanctuary</span>
+          <strong>9:30 AM</strong>
+        </div>
+      </div>
+    </article>
+    <article class="card event-card">
+      <img src="assets/img/prayer.jpg" alt="Members gathered for midweek prayer" loading="lazy">
+      <div class="card-body">
+        <span class="event-tag"><i class="far fa-calendar-alt"></i> Every Wednesday</span>
+        <h3>Midweek Prayer Service</h3>
+        <p>Looking for peace this week? Find it with us at our Wednesday night prayer service. Join us this and every Wednesday.</p>
+        <div class="event-meta-row">
+          <span><i class="fas fa-map-marker-alt"></i> Fellowship Hall</span>
+          <strong>6:00 PM</strong>
+        </div>
+      </div>
+    </article>
+    <article class="card event-card">
+      <img src="assets/img/royals/ay.jpg" alt="Youth fellowship gathering" loading="lazy">
+      <div class="card-body">
+        <span class="event-tag"><i class="far fa-calendar-alt"></i> First Friday, Monthly</span>
+        <h3>Youth Meeting</h3>
+        <p>An evening of worship, games, and fellowship for ages 13&ndash;25.</p>
+        <div class="event-meta-row">
+          <span><i class="fas fa-map-marker-alt"></i> Church Auditorium</span>
+          <strong>7:00 PM</strong>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="container text-center mt-lg">
+    <a href="event.html" class="btn btn-ghost">See All Sermons &amp; Services <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+
+<section class="section section--primary">
+  <div class="section-head reveal">
+    <span class="eyebrow" style="justify-content:center;">Testimonies</span>
+    <h2>Stories from Our Church Family</h2>
+    <p>Hear what members are saying about life at Abeka SDA Church.</p>
+  </div>
+  <div class="testimonial-track-wrap reveal">
+    <div class="testimonial-track">
+      <div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/aboy.jpg" alt="Maxwell Sarpong" loading="lazy">
+        <div><strong>Maxwell Sarpong</strong><span>Member since 1999</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>This church transformed my life through its powerful teachings.</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/dennis.jpeg" alt="Dennis Oduro Snr." loading="lazy">
+        <div><strong>Dennis Oduro Snr.</strong><span>Member since 1994</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>The community here has been so supportive during difficult times.</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/esk.jpeg" alt="E.S.K. Amarh" loading="lazy">
+        <div><strong>E.S.K. Amarh</strong><span>Member since 1982</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>This church transformed my life through its powerful teachings.</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/aboy.jpg" alt="Maxwell Sarpong" loading="lazy">
+        <div><strong>Maxwell Sarpong</strong><span>Member since 1999</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>This church transformed my life through its powerful teachings.</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/dennis.jpeg" alt="Dennis Oduro Snr." loading="lazy">
+        <div><strong>Dennis Oduro Snr.</strong><span>Member since 1994</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>The community here has been so supportive during difficult times.</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/esk.jpeg" alt="E.S.K. Amarh" loading="lazy">
+        <div><strong>E.S.K. Amarh</strong><span>Member since 1982</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>This church transformed my life through its powerful teachings.</p>
+    </div>
+    </div>
+  </div>
+  <div class="testimonial-track-wrap reveal" style="margin-top:22px;">
+    <div class="testimonial-track reverse">
+      <div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/abena.jpg" alt="Ewura Abena" loading="lazy">
+        <div><strong>Ewura Abena</strong><span>Member since 2015</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>The children's ministry is outstanding — my fellow kids love coming to church!</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/narh1.jpeg" alt="Vincent Narh" loading="lazy">
+        <div><strong>Vincent Narh</strong><span>Member since 1991</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>I've found true purpose and meaning through this church's guidance.</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/dhimple.jpg" alt="Ama Birago" loading="lazy">
+        <div><strong>Ama Birago</strong><span>Member since 2002</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>The worship experiences here are truly transformative and uplifting.</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/abena.jpg" alt="Ewura Abena" loading="lazy">
+        <div><strong>Ewura Abena</strong><span>Member since 2015</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>The children's ministry is outstanding — my fellow kids love coming to church!</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/narh1.jpeg" alt="Vincent Narh" loading="lazy">
+        <div><strong>Vincent Narh</strong><span>Member since 1991</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>I've found true purpose and meaning through this church's guidance.</p>
+    </div><div class="testimonial-card">
+      <div class="person">
+        <img src="assets/img/royals/dhimple.jpg" alt="Ama Birago" loading="lazy">
+        <div><strong>Ama Birago</strong><span>Member since 2002</span></div>
+      </div>
+      <p class="quote"><i class="fas fa-quote-left" style="color:var(--accent);margin-right:6px;"></i>The worship experiences here are truly transformative and uplifting.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container reveal">
+    <div class="card" style="padding:44px;">
+      <div class="section-head" style="margin-bottom:32px;">
+        <span class="eyebrow" style="justify-content:center;">New Here?</span>
+        <h2>Welcome to Abeka SDA Church!</h2>
+        <p>We're so glad you're checking us out. Whether you're exploring faith, new to the area, or just curious, we want you to feel at home.</p>
+      </div>
+      <div class="expect-grid">
+        <div>
+          <h3><i class="fas fa-dove"></i> What to Expect</h3>
+          <ul class="expect-list">
+            <li><i class="fas fa-smile"></i> <span><strong>Warm Welcome:</strong> friendly greeters will meet you at the door</span></li>
+            <li><i class="fas fa-tshirt"></i> <span><strong>Casual Atmosphere:</strong> come as you are &mdash; African wear, suits, or sandals</span></li>
+            <li><i class="fas fa-music"></i> <span><strong>Engaging Worship:</strong> uplifting music and relevant messages</span></li>
+            <li><i class="fas fa-child"></i> <span><strong>Kids &amp; Youth Programs:</strong> safe, fun environments for all ages</span></li>
+            <li><i class="fas fa-clock"></i> <span><strong>Service Length:</strong> about 75 minutes, with connection time after</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3><i class="fas fa-question-circle"></i> Frequently Asked Questions</h3>
+          <div class="faq-row"><div class="faq-question">What time are services?</div><div class="faq-answer">Saturdays at 9:30 AM</div></div>
+          <div class="faq-row"><div class="faq-question">Where do I park?</div><div class="faq-answer">Free parking is available next to the church</div></div>
+          <div class="faq-row"><div class="faq-question">Do I need to dress up?</div><div class="faq-answer">Not at all &mdash; come comfortable</div></div>
+          <div class="faq-row"><div class="faq-question">Is there something for my kids?</div><div class="faq-answer">Age-specific programs run during each service</div></div>
+          <div class="faq-row"><div class="faq-question">Will I be singled out?</div><div class="faq-answer">Never &mdash; participate as much or as little as you like</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<div class="floating-chat">
+  <a href="https://wa.me/233534268869" target="_blank" rel="noopener" class="whatsapp" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.facebook.com/theabekasdachurch" target="_blank" rel="noopener" class="messenger" aria-label="Message us on Facebook"><i class="fab fa-facebook-messenger"></i></a>
+</div>
+<div id="prayerModal" class="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal aria-label="Close">&times;</button>
+    <h2><i class="fas fa-praying-hands"></i> Prayer Request</h2>
+    <p style="color:var(--muted);font-size:.92rem;margin-bottom:16px;">Share what's on your heart. Our prayer team keeps every request confidential.</p>
+    <iframe title="Prayer request form" src="https://docs.google.com/forms/d/e/1FAIpQLSeb1RpJYBGLV7XDMu33oly7lWFSHIR5muvQrNGHHYIy12WM4g/viewform?embedded=true"></iframe>
+  </div>
+</div>
+<div id="donationModal" class="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal aria-label="Close">&times;</button>
+    <h2><i class="fas fa-hand-holding-heart"></i> Give Your Offering</h2>
+    <div class="payment-option">
+      <h3 style="margin-bottom:8px;">PayPal</h3>
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com">
+        <input type="hidden" name="item_name" value="Abeka SDA Church Offering">
+        <input type="hidden" name="currency_code" value="USD">
+        <div class="amount-options">
+          <button type="button" class="amount-btn" data-amount="10">$10</button>
+          <button type="button" class="amount-btn" data-amount="20">$20</button>
+          <button type="button" class="amount-btn" data-amount="50">$50</button>
+          <input type="number" name="amount" min="1" placeholder="Other amount">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fab fa-paypal"></i> Give via PayPal</button>
+      </form>
+    </div>
+    <div class="payment-option">
+      <h3 style="margin-bottom:6px;">Credit / Debit Card</h3>
+      <p style="color:var(--muted);font-size:.9rem;">Direct card payments are coming soon. For now, please use PayPal or give in person.</p>
+    </div>
+    <p class="giving-footer" style="text-align:center;color:var(--muted);font-size:.82rem;padding-top:10px;border-top:1px solid var(--border);">
+      Secure online giving powered by <img src="assets/img/royals/egiving.png" alt="eGiving" style="height:16px;vertical-align:middle;">
+    </p>
+  </div>
+</div>
+<div id="confirmationModal" class="modal-overlay">
+  <div class="modal-box" style="text-align:center;">
+    <button class="modal-close" data-close-modal aria-label="Close">&times;</button>
+    <div class="confirm-icon"><i class="fas fa-check-circle"></i></div>
+    <h2 style="justify-content:center;">Thank You!</h2>
+    <p style="color:var(--muted);">Your request has been submitted. We'll be in touch soon.</p>
+    <button class="btn btn-dark" data-close-modal style="margin-top:10px;">Close</button>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/img/abeka.jpg" alt="Abeka SDA Church logo">
+        <strong>Abeka SDA Church</strong>
+      </div>
+      <p>A welcoming Seventh-day Adventist family in Abeka-Lapaz, Accra &mdash; worshipping, growing, and serving together since 1982.</p>
+      <div class="social-row">
+        <a href="https://www.facebook.com/theabekasdachurch" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/royalpfclub" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/royalspfclub" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@abeka_sda_church" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/233534268869" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="ay.html">Youth Ministry</a></li>
+        <li><a href="event.html">Sermons</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="bible.html">Bible Explorer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Get Involved</h3>
+      <ul>
+        <li><button class="btn-link" data-open-modal="prayerModal" style="background:none;border:none;color:#c7d1ee;padding:0;font:inherit;cursor:pointer;">Prayer Request</button></li>
+        <li><button class="btn-link" data-open-modal="donationModal" style="background:none;border:none;color:#c7d1ee;padding:0;font:inherit;cursor:pointer;">Give Online</button></li>
+        <li><a href="event.html">Watch Sermons</a></li>
+        <li><a href="ay.html">Join Youth Ministry</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Visit Us</h3>
+      <ul class="footer-contact">
+        <li><i class="fas fa-map-marker-alt"></i> JQ24+JQG, Abeka-Lapaz, Adjacent Rene School, Accra</li>
+        <li><i class="fas fa-phone"></i> (+233) 53-426-8869</li>
+        <li><i class="fas fa-envelope"></i> info@abekasdachurch.com</li>
+      </ul>
+      <div class="map-card">
+        <iframe title="Abeka SDA Church map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7658440588652!2d-0.24522355677653027!3d5.60156989600896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf998ca7bfb8bb%3A0x5a2562a371bc9fac!2sAbeka%20SDA%20Church!5e0!3m2!1sen!2sgh!4v1754309034451!5m2!1sen!2sgh" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span data-year></span> Abeka SDA Church. All Rights Reserved. &middot; Secure giving powered by <img src="assets/img/royals/egiving.png" alt="eGiving"></p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

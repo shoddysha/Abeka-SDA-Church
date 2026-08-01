@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bible Explorer — Abeka SDA Church</title>
+<meta name="description" content="Search Scripture, read popular verses, and explore timeless Bible stories with Abeka SDA Church.">
+<meta property="og:title" content="Bible Explorer — Abeka SDA Church">
+<meta property="og:description" content="Search Scripture, read popular verses, and explore timeless Bible stories with Abeka SDA Church.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/abeka.jpg">
+<link rel="icon" type="image/jpeg" href="assets/img/abeka.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+<div class="announce-bar" role="note" aria-label="Announcements">
+  <div class="marquee-track">
+    <span><i class="fas fa-church"></i> Sabbath Service every Saturday at 9:30 AM</span>
+    <span><i class="fas fa-hands-praying"></i> Prayer Meeting every Wednesday at 6:00 PM</span>
+    <span><i class="fas fa-campground"></i> Annual Camp Meeting coming soon</span>
+    <span><i class="fas fa-church"></i> Sabbath Service every Saturday at 9:30 AM</span>
+    <span><i class="fas fa-hands-praying"></i> Prayer Meeting every Wednesday at 6:00 PM</span>
+    <span><i class="fas fa-campground"></i> Annual Camp Meeting coming soon</span>
+  </div>
+</div>
+<header class="site-header">
+  <nav class="navbar" aria-label="Primary">
+    <a href="index.html" class="brand">
+      <img src="assets/img/abeka.jpg" alt="Abeka SDA Church logo">
+      <span class="brand-text"><strong>Abeka SDA Church</strong><span>Seventh-day Adventist</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="">
+    <i class="fas fa-home"></i><span class="nav-text">Home</span>
+  </a></li>
+<li><a href="bible.html" class="active">
+    <i class="fas fa-bible"></i><span class="nav-text">Bible</span>
+  </a></li>
+<li class="dropdown">
+  <a href="ay.html" class="" aria-haspopup="true">
+    <i class="fas fa-users"></i><span class="nav-text">Youth Ministry</span>
+    <i class="fas fa-chevron-down" style="font-size:.65rem;opacity:.6"></i>
+  </a>
+  <div class="dropdown-content">
+    <a href="ay.html">Youth Ministry Overview</a>
+<a href="adventurers.html">Adventurers (4-9)</a>
+<a href="pathfinders.html">Pathfinders (10-15)</a>
+<a href="senior.html">Senior Youth (16+)</a>
+  </div>
+</li>
+<li><a href="event.html" class="">
+    <i class="fas fa-microphone-alt"></i><span class="nav-text">Sermons</span>
+  </a></li>
+<li><a href="gallery.html" class="">
+    <i class="fas fa-images"></i><span class="nav-text">Gallery</span>
+  </a></li>
+<li><a href="about.html" class="">
+    <i class="fas fa-info-circle"></i><span class="nav-text">About</span>
+  </a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="btn btn-ghost btn-sm" data-open-modal="prayerModal"><i class="fas fa-praying-hands"></i> Prayer</button>
+      <button class="btn btn-dark btn-sm" data-open-modal="donationModal"><i class="fas fa-hand-holding-heart"></i> Give</button>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero hero--page">
+  <div class="hero-rays"></div>
+  <div class="hero-content">
+    <span class="eyebrow">Scripture</span>
+    <h1>Explore God's Word</h1>
+    <p class="lede">Discover truth, wisdom, and guidance in Scripture.</p>
+  </div>
+</section>
+
+<section class="section section--surface">
+  <div class="container reveal" style="max-width:900px;">
+    <div class="verse-search">
+      <select aria-label="Bible version">
+        <option>King James Version (KJV)</option>
+        <option>Bible in Basic English (BBE)</option>
+        <option>World English Bible (WEB)</option>
+        <option>Open English Bible (OEB)</option>
+        <option>American Standard Version (ASV)</option>
+      </select>
+      <input type="search" placeholder="Search a verse or keyword, e.g. &quot;John 3:16&quot;" aria-label="Search verses">
+      <button class="btn btn-dark"><i class="fas fa-search"></i> Search</button>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="section-head reveal">
+    <span class="eyebrow" style="justify-content:center;">Verses</span>
+    <h2>Popular Verses</h2>
+    <p>Scriptures our church family returns to again and again.</p>
+  </div>
+  <div class="container pop-verse-grid reveal">
+    <div class="card pop-verse-card">
+      <div class="ref">Psalm 23:1</div>
+      <p>&ldquo;The Lord is my shepherd, I lack nothing.&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">Philippians 4:13</div>
+      <p>&ldquo;I can do all things through Christ who strengthens me.&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">Jeremiah 29:11</div>
+      <p>&ldquo;For I know the plans I have for you, declares the Lord…&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">John 3:16</div>
+      <p>&ldquo;For God so loved the world that he gave his one and only Son…&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">Proverbs 3:5-6</div>
+      <p>&ldquo;Trust in the Lord with all your heart…&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">Romans 8:28</div>
+      <p>&ldquo;And we know that in all things God works for the good…&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">Isaiah 40:31</div>
+      <p>&ldquo;But those who hope in the Lord will renew their strength…&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">Matthew 11:28</div>
+      <p>&ldquo;Come to me, all you who are weary and burdened…&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">Joshua 1:9</div>
+      <p>&ldquo;Be strong and courageous. Do not be afraid…&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">Psalm 46:10</div>
+      <p>&ldquo;Be still, and know that I am God…&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">2 Timothy 1:7</div>
+      <p>&ldquo;For God has not given us a spirit of fear…&rdquo;</p>
+    </div><div class="card pop-verse-card">
+      <div class="ref">1 Corinthians 13:4-5</div>
+      <p>&ldquo;Love is patient, love is kind…&rdquo;</p>
+    </div>
+  </div>
+</section>
+
+<section class="section quote-banner section--primary">
+  <p>&ldquo;Faith is taking the first step even when you don't see the whole staircase.&rdquo;</p>
+  <span>&mdash; Martin Luther King Jr.</span>
+</section>
+
+<section class="section section--surface">
+  <div class="section-head reveal">
+    <span class="eyebrow" style="justify-content:center;">Stories</span>
+    <h2>Bible Stories for Inspiration</h2>
+    <p>Explore these timeless stories from Scripture.</p>
+  </div>
+  <div class="container grid grid-3 reveal">
+    <article class="card story-card">
+      <div class="card-media"><img src="assets/img/royals/bbl.jpeg" alt="Noah's Ark" loading="lazy"></div>
+      <div class="card-body">
+        <span class="badge">Genesis 6–9</span>
+        <h3 style="margin-top:10px;">Noah's Ark</h3>
+        <p style="color:var(--muted);">The story of faith, obedience, and God's covenant through the flood.</p>
+      </div>
+    </article><article class="card story-card">
+      <div class="card-media"><img src="assets/img/royals/bbbl.jpg" alt="David and Goliath" loading="lazy"></div>
+      <div class="card-body">
+        <span class="badge">1 Samuel 17</span>
+        <h3 style="margin-top:10px;">David and Goliath</h3>
+        <p style="color:var(--muted);">How a young shepherd defeated a giant through faith in God.</p>
+      </div>
+    </article><article class="card story-card">
+      <div class="card-media"><img src="assets/img/royals/prodigal.jpg" alt="The Prodigal Son" loading="lazy"></div>
+      <div class="card-body">
+        <span class="badge">Luke 15:11–32</span>
+        <h3 style="margin-top:10px;">The Prodigal Son</h3>
+        <p style="color:var(--muted);">Jesus' parable about forgiveness and the Father's unconditional love.</p>
+      </div>
+    </article>
+  </div>
+  <div class="container text-center mt-lg">
+    <a href="#" class="btn btn-ghost">View All Bible Stories <i class="fas fa-arrow-right"></i></a>
+  </div>
+</section>
+</main>
+<div class="floating-chat">
+  <a href="https://wa.me/233534268869" target="_blank" rel="noopener" class="whatsapp" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.facebook.com/theabekasdachurch" target="_blank" rel="noopener" class="messenger" aria-label="Message us on Facebook"><i class="fab fa-facebook-messenger"></i></a>
+</div>
+<div id="prayerModal" class="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal aria-label="Close">&times;</button>
+    <h2><i class="fas fa-praying-hands"></i> Prayer Request</h2>
+    <p style="color:var(--muted);font-size:.92rem;margin-bottom:16px;">Share what's on your heart. Our prayer team keeps every request confidential.</p>
+    <iframe title="Prayer request form" src="https://docs.google.com/forms/d/e/1FAIpQLSeb1RpJYBGLV7XDMu33oly7lWFSHIR5muvQrNGHHYIy12WM4g/viewform?embedded=true"></iframe>
+  </div>
+</div>
+<div id="donationModal" class="modal-overlay">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal aria-label="Close">&times;</button>
+    <h2><i class="fas fa-hand-holding-heart"></i> Give Your Offering</h2>
+    <div class="payment-option">
+      <h3 style="margin-bottom:8px;">PayPal</h3>
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com">
+        <input type="hidden" name="item_name" value="Abeka SDA Church Offering">
+        <input type="hidden" name="currency_code" value="USD">
+        <div class="amount-options">
+          <button type="button" class="amount-btn" data-amount="10">$10</button>
+          <button type="button" class="amount-btn" data-amount="20">$20</button>
+          <button type="button" class="amount-btn" data-amount="50">$50</button>
+          <input type="number" name="amount" min="1" placeholder="Other amount">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fab fa-paypal"></i> Give via PayPal</button>
+      </form>
+    </div>
+    <div class="payment-option">
+      <h3 style="margin-bottom:6px;">Credit / Debit Card</h3>
+      <p style="color:var(--muted);font-size:.9rem;">Direct card payments are coming soon. For now, please use PayPal or give in person.</p>
+    </div>
+    <p class="giving-footer" style="text-align:center;color:var(--muted);font-size:.82rem;padding-top:10px;border-top:1px solid var(--border);">
+      Secure online giving powered by <img src="assets/img/royals/egiving.png" alt="eGiving" style="height:16px;vertical-align:middle;">
+    </p>
+  </div>
+</div>
+<div id="confirmationModal" class="modal-overlay">
+  <div class="modal-box" style="text-align:center;">
+    <button class="modal-close" data-close-modal aria-label="Close">&times;</button>
+    <div class="confirm-icon"><i class="fas fa-check-circle"></i></div>
+    <h2 style="justify-content:center;">Thank You!</h2>
+    <p style="color:var(--muted);">Your request has been submitted. We'll be in touch soon.</p>
+    <button class="btn btn-dark" data-close-modal style="margin-top:10px;">Close</button>
+  </div>
+</div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/img/abeka.jpg" alt="Abeka SDA Church logo">
+        <strong>Abeka SDA Church</strong>
+      </div>
+      <p>A welcoming Seventh-day Adventist family in Abeka-Lapaz, Accra &mdash; worshipping, growing, and serving together since 1982.</p>
+      <div class="social-row">
+        <a href="https://www.facebook.com/theabekasdachurch" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/royalpfclub" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/royalspfclub" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@abeka_sda_church" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/233534268869" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="ay.html">Youth Ministry</a></li>
+        <li><a href="event.html">Sermons</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="bible.html">Bible Explorer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Get Involved</h3>
+      <ul>
+        <li><button class="btn-link" data-open-modal="prayerModal" style="background:none;border:none;color:#c7d1ee;padding:0;font:inherit;cursor:pointer;">Prayer Request</button></li>
+        <li><button class="btn-link" data-open-modal="donationModal" style="background:none;border:none;color:#c7d1ee;padding:0;font:inherit;cursor:pointer;">Give Online</button></li>
+        <li><a href="event.html">Watch Sermons</a></li>
+        <li><a href="ay.html">Join Youth Ministry</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Visit Us</h3>
+      <ul class="footer-contact">
+        <li><i class="fas fa-map-marker-alt"></i> JQ24+JQG, Abeka-Lapaz, Adjacent Rene School, Accra</li>
+        <li><i class="fas fa-phone"></i> (+233) 53-426-8869</li>
+        <li><i class="fas fa-envelope"></i> info@abekasdachurch.com</li>
+      </ul>
+      <div class="map-card">
+        <iframe title="Abeka SDA Church map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.7658440588652!2d-0.24522355677653027!3d5.60156989600896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf998ca7bfb8bb%3A0x5a2562a371bc9fac!2sAbeka%20SDA%20Church!5e0!3m2!1sen!2sgh!4v1754309034451!5m2!1sen!2sgh" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span data-year></span> Abeka SDA Church. All Rights Reserved. &middot; Secure giving powered by <img src="assets/img/royals/egiving.png" alt="eGiving"></p>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
